@@ -5,7 +5,6 @@ FROM ubuntu:20.04
 ENV DEBIAN_FRONTEND=noninteractive \
     LANG=C.UTF-8
 
-
 # psycopg2-binary in requirements.txt is not compiled for linux/arm64
 # TODO: Use build stages to compile psycopg2-binary separately instead of
 # bloating the image size
